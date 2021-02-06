@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="selenium.webdriver.testNG.Prioritization"/>
+      <class name="selenium.webdriver.actionsclass.ToolTip"/>
+      <class name="selenium.webdriver.webelements.TextBox"/>
+      <class name="selenium.webdriver.actionsclass.DragDrop"/>
+      <class name="selenium.webdriver.testNG.DependesOnMethod"/>
+      <class name="selenium.webdriver.webelements.WebButton"/>
+      <class name="selenium.webdriver.actionsclass.MouseOver"/>
+      <class name="selenium.webdriver.webelements.CheckBox"/>
+      <class name="selenium.webdriver.webelements.WebTables"/>
+      <class name="selenium.webdriver.actionsclass.DoubleClick"/>
+      <class name="selenium.webdriver.advance.CaptureScreenShot"/>
+      <class name="selenium.webdriver.testNG.Annotations"/>
+      <class name="selenium.webdriver.testNG.Assertions"/>
+      <class name="selenium.webdriver.datadriventesting.WriteDataFromExcel"/>
+      <class name="selenium.webdriver.webelements.RadioButton"/>
+      <class name="selenium.webdriver.actionsclass.Resizing"/>
+      <class name="selenium.webdriver.datadriventesting.ReadDataFromExcelFile"/>
+      <class name="selenium.webdriver.actionsclass.RightClick"/>
+      <class name="selenium.webdriver.actionsclass.Slider"/>
+      <class name="selenium.webdriver.webelements.DropDown"/>
+      <class name="selenium.webdriver.webelements.IFrame"/>
+      <class name="selenium.webdriver.webelements.Alerts"/>
+      <class name="selenium.webdriver.testNG.ParallelTesting"/>
+      <class name="selenium.webdriver.webelements.DatePicker"/>
+      <class name="selenium.webdriver.testNG.GroupingMethods"/>
+      <class name="selenium.webdriver.webdrivercommands.WaitCommands"/>
+      <class name="selenium.webdriver.testNG.TestNGDataProvider"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
