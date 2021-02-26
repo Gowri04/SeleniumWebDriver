@@ -11,7 +11,8 @@ public class CssSelector
 	 WebDriver driver=new ChromeDriver();
   
 	 driver.get("https://www.facebook.com/");
-	 driver.manage().window().maximize(); // maximize web page
+	
+	 driver.manage().window().maximize(); 
 	
 	 //Tag & ID
 	 //driver.findElement(By.cssSelector("input#email")).sendKeys("David");
@@ -27,62 +28,7 @@ public class CssSelector
 	 
 	 //Tag , class & attribute
 	 driver.findElement(By.cssSelector("input.inputtext[data-testid=royal_email]")).sendKeys("Smith");
+	 
 	 driver.findElement(By.cssSelector("input.inputtext[data-testid=royal_pass]")).sendKeys("abc");
  }
 }
-/*
-
-cssSelector
--------------
-
-Tag & ID
----------
-
-syntax: tag#id
-
-Example: 
-
-input#email
-
-or
-
-#email
-
-Tag & Class
----------------
-
-syntax: tag.class
-
-Example: 
-
-input.inputtext
-
-or 
-
-.inputtext
-
-Tag & attribute
------------------
-
-syntax: tag[attributename=atttributevalue]
-
-Example
-
-[name=email]
-
-or
-
-input[name=email]
-
-Tag,class & attribute
-----------------------
-
-syntax: tag.class[attributename=attributevalue] 
-
-input.inputtext[data-testid=royal_email]
-
-or
-
-input.inputtext[data-testid=royal_pass]
-
-*/

@@ -1,0 +1,82 @@
+What is Robot Class?
+
+	1. Robot class is a part java API AWT package.
+	2. Robot class is used to generate native system input events to control mouse and keyboard events.
+
+Why we need a AWT package which is not a part of WebDriver API?
+
+	1. When a user needs to handle alert pop-ups on the webpage.
+	2. When a user wants to enter text in windows pop-ups with a combination of modifier keys such as SHIFT, ALT.
+
+Why we need Robot Class?
+
+	� Selenium WebDriver cannot handle windows pop-ups so to handle native OS pop ups we need Robot Class.
+	
+Why we cannot use Action Class methods to handle mouse and keyboard events on desktop pop-ups?
+
+	� Action class method needs WebElement objects to perform actions.
+	� Desktop pop-up doesn't not have locator, so we use robot class methods to perform keyboard and mouse events on desktop-pop-ups.
+
+How to use Robot Class methods?
+
+	1. Import the java.awt.Robot package
+	2. Create a Robot Class Object and instantiate
+	3. Using Robot Class Object invoke the methods.
+	
+
+	
+
+
+Mouse Events
+�
+	� mousePress(int buttons)- Press one or more mouse buttons. Buttons are the Button mask is a combination of one or more mouse button masks.
+�
+Standard Button Masks Methods in Mouse Press
+�
+	1. InputEvent.BUTTON1_DOWN_MASK- For mouse left click
+	2. InputEvent.BUTTON2_DOWN_MASK- For mouse middle button click
+	3. InputEvent.BUTTON3_DOWN_MASK- For mouse right click
+�
+	� mouseRelease- Releases one or more mouse buttons.
+�
+	� mouseMove- Move the mouse pointer to the given screen position. Here x is X position, y is Y position in the coordinates.
+	�
+	�
+	https://docs.oracle.com/javase/10/docs/api/java/awt/Robot.html
+	�
+Keyboard Events
+
+	� keyPress(int keycode)- 
+	Press the given key. 
+	Keycode is an integer value for the pressed key.
+	� keyPress(keyEvent.VK_A)
+	
+	� keyRelease(int keycode)
+	Release the given key.
+	� keyRelease(keyEvent.VK_SHIFT)
+	
+	
+KeyEvent
+
+	1. KeyEvent is a low level event.
+	2. In java awt package low level events are events that indicate direct communication from the users like keyPress, keyRelease, Move, Mouse Click.
+	3. keyEvent indicates an event occurs on pressing, releasing, or typing a text on the component object like a text field.
+	4. keyEvent contains constant fields like:
+		a. For Alphabets, from VK_A till VK_Z
+		b. For Numbers from VK_0 till VK_9
+		c. For Special Characters VK_Dollar for $ key.
+
+	
+	
+	
+	
+	Advantages:
+	� It provides control over the Keyboard as well as Mouse events.
+	� It offers a way to handle an interaction with Operating system pop-ups support of which is not possible with Selenium Web Driver API.
+	� Robot class is especially useful in managing file upload/download actions by interacting with OS pop-ups.
+	� It is easy to consume in the java Selenium scripts as this class is part of Java package.
+	�
+	Limitations:
+	� Most of the methods like mouseMove are dependent on screen resolution, so, the method may perform differently on different screens.
+	� This class�acts only on the window in focus, so the behaviour may differ when multiple windows open.
+	� Switching between different frames or windows is difficult with Robot methods.

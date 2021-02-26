@@ -1,0 +1,23 @@
+TestNG - Next Generation
+	1. Creator - Credic Beust
+	2. Open source Automation Testing Framework 
+	3. Inspired from JUnit and NUnit with new functionality 
+	4. Write tests with help of annotations, grouping, sequencing & parametrizing.
+.
+Benefits of TestNG 
+------------------
+Generates HTML Reports automatically 
+a. failed tests, 
+b. Passed tests, 
+c. test execution times.
+Test cases can be Grouped & Prioritized 
+Parallel testing is possible.
+Generates Logs.
+Parameterization helps in data-driven testing in TestNG.
+Annotations made tester life easy.
+Provides a bunch of assertion methods for testing.
+Run multiple test methods on various browsers to perform cross-browser testing.
+Allows the test methods to depend on each other(Test Dependency )
+Provides a grouping of methods, parallel testing, prioritization & parameterization of methods
+Provide parameters and call the function repeatedly with different values.
+	

@@ -10,7 +10,8 @@ public class NavigationCommands
 		WebDriver d=new ChromeDriver();
 		
 		d.get("https://www.seleniumeasy.com/");
-	
+		Thread.sleep(2000);
+		
 		d.navigate().refresh();
 		Thread.sleep(2000);
 		
@@ -26,17 +27,3 @@ public class NavigationCommands
 		d.close();
 	}
 }
-/*
-
-Navigation Commands 
-====================
-	 
-navigate.().to(String arg0):void= Loads a new web page in the current browser window. 
-		
-navigate.().back():void= Click the Back Button of any browser. 
-		
-navigate.().forward():void= Click the Forward Button of any browser. 
-		
-navigate.().refresh():void= Refresh the current page. 
-
-*/

@@ -63,3 +63,12 @@ public class ToolTip
 		
 	}
 }
+/*
+
+How to capture tooltip in Selenium?
+We can capture tooltip 
+	1. using getAttribute() and 
+	2. Using move to element() from action class and using getText().
+
+
+*/

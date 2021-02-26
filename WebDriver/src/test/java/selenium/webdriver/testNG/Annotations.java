@@ -59,3 +59,15 @@ public class Annotations
 		System.out.println("Runs after all <test> tag in this suite have run.");
 	}
 }
+/*
+
+
+Annotations are used to control the flow of the execution of tests.
+
+Why Use Annotations? Benefits of Annotations?
+	1. Easy To Learn ,Execute 
+	2. Can Be Parameterized 
+	3. Strongly Typed– Errors can be encountered during the run time
+	4. No Need To Extend Any Class
+
+*/

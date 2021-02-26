@@ -1,0 +1,184 @@
+What is Continuous Integration?
+
+	1. Continuous integration�is a software development method where members of the team can integrate their work at least once a day.
+	2. In this method, every integration is checked by an automated build to search the error. 
+	3. The CI concept was first introduced over two decades ago to avoid "integration problems." in end of the project
+	4. In Continuous Integration after a code commit, the software is built and tested immediately. 
+	5. In a large project with many developers, commits are made many times during a day. With each commit code is built and tested. If the test is passed, build is tested for deployment. If the deployment is a success, the code is pushed to Production. This commit, build, test, and deploy is a continuous process, and hence the name continuous integration/deployment.
+
+Continuous Integration Pipeline 
+
+A Continuous Integration Pipeline is a powerful instrument that consists of a set of tools designed to�host,�monitor,�compile�and�test�code, or code changes
+
+	1. Continuous Integration Server�(Jenkins, Bamboo, CruiseControl, TeamCity, and others)
+	2. Source Control Tool�(CVS, SVN, GIT, Mercurial, Perforce, ClearCase and others)
+	3. Build tool�(Make, ANT, Maven, Ivy, Gradle, and others)
+	4. Automation testing framework�(Selenium, Appium, TestComplete, UFT, and others)
+
+Development without CI vs. Development with CI
+
+Development without CI	Development with CI
+Lots of Bugs	Fewer bugs
+Infrequent commits	Regular commits
+Infrequent and slow releases	Regular working releases
+Difficult integration	Easy and Effective Integration
+Testing happens late	Testing happens early and often.
+Issue raised are harder to fix	Find and fix problems faster and more efficiently.
+Poor project visibility	Better project visibility
+
+
+Why Use CI?
+
+	� Helps you to build better quality software
+	� CI allows software developers to work independently on features in parallel
+	� Helps you to conduct repeatable testing
+	� Helps develop a potentially shippable product for fully automated build
+	� Helps you to reduced risks by making deployment faster and more predictable immediate feedback when issue arrives
+	� Avoid last-minute confusion at release date and timing
+
+When do I build?
+
+	� At every check-in
+	� Every time a dependency changes
+
+How do I build?
+
+
+
+
+CI process
+
+	� Ideally, the build should come from the command line and should not depend on IDE.
+	� The build should happen continuously using a dedicated Cl server, not a cron job.
+	� CI built should be triggered on every check-in and not just at midnight
+	� The build should provide immediate feedback and Require no developer effort
+	� Identify key metrics and track them visually. More importantly, act on them immediately
+
+What do you need to conduct CI process?
+
+	� Version Control System (VCS):�It offers a reliable method to centralize and preserve changes made to your project over time.
+	� Virtual Machine:�You should have a spare server or at least one virtual machine to build your system.
+	� Hosted CI Tool Solutions:�To avoid servers or virtual machines, you should go for hosted CI tool solutions. This tool helps in the maintenance of the whole process and offers easier scalability.
+	� Tools:�If you select a self-hosted variant, you will need to install one of the many CI tools like Jenkins, TeamCity, Bamboo, GitLab.
+
+How Continuous integration work?
+
+	1. You are surely aware of the old phone Nokia. 
+	2. Nokia used to implement a procedure called nightly build. 
+	3. After multiple commits from diverse developers during the day, the software built every night. 
+	4. Since the software was built only once in a day, it's a huge pain to isolate, identify, and fix the errors in a large codebase.
+	5. Later, they adopted the Continuous Integration approach. 
+	6. The software was built and tested as soon as a developer committed code. 
+	7. If any error is detected, the respective developer can quickly fix the defect.
+
+
+
+
+Features of CI
+
+	� Allows you to maintain just a single source repository
+	� You can test the clone of the production environment
+	� The built environment should be close to the production environment.
+	� Constant availability of a current build
+	� The complete process of build and testing and deployment should be visible to all the stack holders.
+
+Disadvantages of CI
+
+	� Initial setup time and training is required to get acquainted with Cl server
+	� Development of suitable test procedures is essential
+	� Well-developed test-suite required many resources for Cl server
+	� Conversion of familiar processes
+	� Requires additional servers and environments
+	� Waiting times may occur when multiple developers want to integrate their code around the same time
+
+Tools for CI process
+	1. Jenkins
+	2. Bamboo
+	3. TeamCity
+
+What is Jenkins?
+
+	1. Jenkins is the open-source continuous integration tool written in java and developed by Hudson lab.
+	2. Jenkins�is an open-source continuous integration server capable of performing a chain of actions(Deploying build manually or automatically, running test script) that helps to achieve the continuous integration process in an automated fashion.
+	3. It is cross-platform and can be used on Windows, Linux, Mac OS and Solaris environments.
+	4. Jenkin's chief usage is to monitor any job which can be SVN checkout, corn or any application states.
+	5. It is a server-based application and requires a web server like Apache Tomcat. 
+	6. Jenkins became so popular is that of its monitoring of repeated tasks which arise during the development of a project.
+	7. For example, if your team is developing a project, Jenkins will continuously test your project builds and show you the errors in early stages of your development.
+	8. By using Jenkins, software companies can accelerate their software development process, as Jenkins can automate build and test at a rapid rate.
+	9. Jenkins supports the complete development lifecycle of software from building, testing, documenting the software, deploying and other stages of a software development lifecycle.
+
+Important Features of Jenkins
+
+	1. Change Support: Jenkins generates the list of all changes done in repositories like SVN.
+	2. Permanent links: Jenkins provides direct links to the latest build or failed build that can be used for easy communication
+	3. Installation: Jenkins is easy to install either using direct installation file (exe) or war file to deploy using application server.
+	4. Email integration: Jenkins can be configured to email the content of the status of the build.
+	5. Easy Configuration: To configure various tasks on Jenkins is easy.
+	6. TestNG test: Jenkins can be configured to run the automation test build on�Testng�after each build of SVN.
+	7. Multiple VMs: Jenkins can be configured to distribute the build on multiple machines.
+	8. Project build: Jenkins documents the details of jar, version of jar and mapping of build and jar numbers.
+	9. Plugins: 3rd�party plugin can be configured in Jenkins to use features and additional functionality.
+
+Why use Continuous Integration with Jenkins?
+
+	1. Some people might think that the old-fashioned way of developing the software is the better way. Let's understand the advantages of CI with Jenkins with the following example
+	2. Let us imagine, that there are around 10 developers who are working on a shared repository. Some developer completes their task in 25 days while others take 30 days to complete.
+
+Before Jenkins	After Jenkins
+Once all Developers had completed their assigned coding tasks, they used to commit their code all at same time. Later, Build is tested and deployed.	The code is built and test as soon as Developer commits code. Jenkin will build and test code many times during the day
+	
+Code commit built, and test cycle was very infrequent, and a single build was done after many days.	If the build is successful, then Jenkins will deploy the source into the test server and notifies the deployment team.
+	
+	If the build fails, then Jenkins will notify the errors to the developer team.
+Since the code was built all at once, some developers would need to wait until other developers finish coding to check their build	The code is built immediately after any of the Developer commits.
+It is not an easy task to isolate, detect, and fix errors for multiple commits.	Since the code is built after each commit of a single developer, it's easy to detect whose code caused the built to fail
+Code build and test process are entirely manual, so there are a lot of chances for failure.	Automated build and test process saving timing and reducing defects.
+The code is deployed once all the errors are fixed and tested.	The code is deployed after every successful build and test.
+Development Cycle is slow	The development cycle is fast. New features are more readily available to users. Increases profits.
+
+
+Jenkins Plugins
+
+Jenkins comes with a limited set of features. 
+If you want to integrate your Jenkins installation with version control tools like Git, then you need to install plugins related to Git. 
+In fact, for integration with tools like Maven, Amazon EC2, you need to install respective plugins in your Jenkins.
+
+Why Maven & Jenkins
+
+Selenium WebDriver is great for browser automation. But, when using it for testing and building a test framework, it feels underpowered. Integrating Maven with Selenium provides following benefits
+Apache Maven provides support for managing the full lifecycle of a test project.
+	� Maven is used to define project structure, dependencies, build, and test management.
+	� Using pom.xml(Maven) you can configure dependencies needed for building testing and running code.
+	� Maven automatically downloads the necessary files from the repository while building the project.
+
+
+Why Jenkins and Selenium?
+
+	� Running Selenium tests in Jenkins allows you to run your tests every time your software changes and deploy the software to a new environment when the tests pass.
+	� Jenkins can schedule your tests to run at specific time.
+	� You can save the execution history and Test Reports.
+	� Jenkins supports Maven for building and�Testing�a project in continuous integration.
+
+Advantages of using Jenkins
+
+	� Jenkins is being managed by the community which is very open. Every month, they hold public meetings and take inputs from the public for the development of Jenkins project.
+	� So far around 280 tickets are closed, and the project publishes stable release every three months.
+	� As technology grows, so does Jenkins. So far Jenkins has around 320 plugins published in its plugins database. With plugins, Jenkins becomes even more powerful and feature rich.
+	� Jenkins also supports cloud-based architecture so that you can deploy Jenkins in cloud-based platforms.
+	� The reason why Jenkins became popular is that it was created by a developer for developers.
+	
+Disadvantages of using Jenkins
+
+	� Its interface is out dated and not user friendly compared to current UI trends.
+	� Though Jenkins is loved by many developers, it's not that easy to maintain it because Jenkins runs on a server and requires some skills as server administrator to monitor its activity.
+	� One of the reasons why many people don't implement Jenkins is due to its difficulty in installing and configuring Jenkins.
+	� Continuous integrations regularly break due to some small setting changes. Continuous integration will be paused and therefore requires some developer attention.
+
+Benefits of using Jenkins
+
+	1. Early issue finding � Bug can be detected in early phase of the software development
+	2. Automatic integration � no separate effort required to integrate all changes
+	3. Installer � a deployable system available at any point of development
+	4. Records � part build records maintained
+	5. Support and Plugins: One of the reasons for Jenkin's popularity is the availability of large community support. Also, lots of ready-made plugins are available which help you expand its functionality.

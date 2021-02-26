@@ -7,11 +7,12 @@ public class Locators2
  public static void main(String[] args) 
  {
 	 System.setProperty("webdriver.chrome.driver","./Drivers\\chromedriver.exe");
+	 
 	 WebDriver driver=new ChromeDriver();
 	 
 	 driver.get("http://automationpractice.com/index.php");
 	  
-	 driver.manage().window().maximize(); // maximize web page
+	 driver.manage().window().maximize(); 
 	  
 	 //className
 	 int sliders=driver.findElements(By.className("homeslider-container")).size();

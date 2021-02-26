@@ -31,26 +31,3 @@ public class ConditionalCommands
 		d.close();
 	}
 }
-/*
-
-Conditional Commands
-=====================
-
-isSelected():boolean
-=====================
-
-Used to verify whether a certain check box, radio button, or option in a drop-down box is selected. 
-
-It does not work on other elements. 
-
-isDisplayed():boolean
-=====================
-
-Used to verify whether a certain element is displayed or not before executing a command. 
-				
-isEnabled():boolean
-====================
-
-Used to verify whether a certain element is enabled or not before executing a command. 	
-
-*/
