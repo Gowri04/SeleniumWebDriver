@@ -50,34 +50,3 @@ public class Assertions
 		d.close();
 	}
 }
-/*
-
-What is Assertion?
-
-Asserts helps us to verify the conditions of the test and decide whether test has failed or passed. 
-
-A test is considered successful ONLY if it is completed without throwing any exception.
-
-Types of Assertions:
-
-1) Hard Assertion
-2) Soft Assertion
-
-Hard Assertion
-It is the default assert mechanism built into TestNG’s package. 
-
-We use it when a test has to stop immediately after the assertion fails.
-
-Soft Assertion
-
-It is a custom assert mechanism supported by TestNG’s package. 
-
-We use it when a test has to continue execution even after an assertion fails in the sequence.
-
-Hard Assertions
-
-1) Assert.assertTrue()
-2) Assert.assertFalse()
-3) Assert.assertEquals()
-
-*/

@@ -74,25 +74,3 @@ public class DropDown
 		d.close();
 	}
 }
-/*
-
-Select Class
-=============
-
-Select is a class used to perform multiple operations on Dropdown and Multiple Select objects. 
-
-selectByIndex(int arg0):void 
-
-selectByVisibleText(String arg0):void
-
-deselectAll():void 
-			
-deselectByIndex(int arg0):void 
-			
-deselectByValue(String arg0):void 
-			
-deselectByVisibleText(String arg0):void 
-			
-isMultiple():boolean 
-
-*/

@@ -136,39 +136,3 @@ public class Alerts
 		
 	}
 }
-/*
-
-Alert is an interface.
-
-Alert is a pop up window that comes up on screen. 
-
-Alerts are blocking in nature. 
-
-Simple alerts just have a OK button. Display some information or warning on the screen to the user 
-
-Confirmation alert have an option to accept or dismiss the alert.
-
-Prompt Alert we get an option to add text to the alert box. Used when some input is required from the user. 
-
-Switch Commands
-===============
-
-switchTo() method is used to switch between frames,alerts and windows to move from one to another using WebDriver.
-
-Switch to Frame by Index= switchTo().frame(index)
-
-Switch to Frames by Name= switchTo().frame(name)
-		
-Switch to Frame by ID= switchTo().frame(id)
-		
-Switch to Frame by WebElement= switchTo().frame(WebElement)
-		
-Switch to default Content(switch back to main page)= switchTo().defaultContent()
-
-d.switchTo().alert();
-		
-d.switchTo().frame(0);
-		
-d.switchTo().window(null);
-
-*/
